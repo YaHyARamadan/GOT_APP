@@ -5,7 +5,7 @@ class CharacterModel {
   final String fullName;
   final String title;
   final String family;
-  final String image;
+  final String imageUrl;
 
   CharacterModel(
       {required this.id,
@@ -14,7 +14,7 @@ class CharacterModel {
       required this.fullName,
       required this.title,
       required this.family,
-      required this.image});
+      required this.imageUrl});
 
   factory CharacterModel.fromJson(Map<String, dynamic> json) {
     return CharacterModel(
@@ -24,7 +24,7 @@ class CharacterModel {
       fullName: json['fullName'],
       title: json['title'],
       family: json['family'],
-      image: json['image'],
+      imageUrl: json['imageUrl'],
     );
   }
 }
